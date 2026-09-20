@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Academix — Learn Math, Science, English, and History from expert instructors. Start your learning journey free." />
+  <title>Academix — Online School</title>
+
+  <!-- Google Fonts: Inter (closest to Notion Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       TASK 2 — Promo Banner + Sticky Navigation
+       ============================================================ -->
+
+  <!-- Promo Banner -->
+  <div class="promo-banner" role="banner" aria-label="Promotion">
+    <div class="container promo-banner__inner">
+      <span class="promo-banner__text">
+        🎓 New semester starts October 1 — enroll now and get your first month free.
+        <a href="#pricing" class="promo-banner__link">See plans →</a>
+      </span>
+    </div>
+  </div>
+
+  <!-- Sticky Navigation -->
+  <header class="site-nav" role="banner">
+    <!-- CSS-only mobile menu toggle -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle__input" aria-hidden="true" />
+
+    <div class="container site-nav__inner">
+
+      <!-- Logo -->
+      <a href="#" class="site-nav__logo" aria-label="Academix home">
+        <span class="site-nav__logo-mark" aria-hidden="true">A</span>
+        <span class="site-nav__logo-text">Academix</span>
+      </a>
+
+      <!-- Center nav links -->
+      <nav class="site-nav__links" aria-label="Main navigation">
+        <a href="#courses"  class="site-nav__link">Courses</a>
+        <a href="#features" class="site-nav__link">Features</a>
+        <a href="#pricing"  class="site-nav__link">Pricing</a>
+        <a href="#faq"      class="site-nav__link">FAQ</a>
+        <a href="#about"    class="site-nav__link">About</a>
+      </nav>
+
+      <!-- Right CTA group -->
+      <div class="site-nav__actions">
+        <a href="#" class="site-nav__login">Log in</a>
+        <a href="#pricing" class="btn btn-primary site-nav__cta">Get started free</a>
+      </div>
+
+      <!-- Hamburger label (mobile only) -->
+      <label for="nav-toggle" class="nav-toggle__label" aria-label="Toggle navigation">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </label>
+
+    </div><!-- /.site-nav__inner -->
+
+    <!-- Mobile drawer (CSS-only) -->
+    <div class="nav-mobile-drawer" aria-hidden="true">
+      <nav aria-label="Mobile navigation">
+        <a href="#courses"  class="nav-mobile-drawer__link">Courses</a>
+        <a href="#features" class="nav-mobile-drawer__link">Features</a>
+        <a href="#pricing"  class="nav-mobile-drawer__link">Pricing</a>
+        <a href="#faq"      class="nav-mobile-drawer__link">FAQ</a>
+        <a href="#about"    class="nav-mobile-drawer__link">About</a>
+        <div class="nav-mobile-drawer__actions">
+          <a href="#" class="btn btn-secondary" style="width:100%; justify-content:center;">Log in</a>
+          <a href="#pricing" class="btn btn-primary" style="width:100%; justify-content:center;">Get started free</a>
+        </div>
+      </nav>
+    </div>
+
+  </header><!-- /.site-nav -->
+
+  <!-- ============================================================
+       TASK 3 — Hero Band
+       ============================================================ -->
+  <section class="hero-band" aria-label="Hero">
+
+    <!-- Decorative sticky-note dots -->
+    <span class="hero-dot hero-dot--purple"  aria-hidden="true"></span>
+    <span class="hero-dot hero-dot--pink"    aria-hidden="true"></span>
+    <span class="hero-dot hero-dot--yellow"  aria-hidden="true"></span>
+    <span class="hero-dot hero-dot--teal"    aria-hidden="true"></span>
+    <span class="hero-dot hero-dot--orange"  aria-hidden="true"></span>
+    <span class="hero-dot hero-dot--green"   aria-hidden="true"></span>
+    <span class="hero-dot hero-dot--rose"    aria-hidden="true"></span>
+    <span class="hero-dot hero-dot--sky"     aria-hidden="true"></span>
+
+    <!-- Decorative mesh wire rings -->
+    <span class="hero-wire hero-wire--1" aria-hidden="true"></span>
+    <span class="hero-wire hero-wire--2" aria-hidden="true"></span>
+
+    <div class="container hero-band__inner">
+
+      <!-- Eye-brow label -->
+      <p class="hero-band__eyebrow micro-upper">
+        Online school for K-12 &amp; beyond
+      </p>
+
+      <!-- Main headline -->
+      <h1 class="hero-band__headline hero-display">
+        Learn without<br />limits.
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="hero-band__subtitle subtitle">
+        Academix brings expert-taught Math, Science, English, and History
+        to every student — at their own pace, from anywhere.
+      </p>
+
+      <!-- CTA row -->
+      <div class="hero-band__actions">
+        <a href="#pricing"  class="btn btn-primary hero-band__btn-primary">Start learning free</a>
+        <a href="#courses"  class="btn btn-secondary-on-dark">Explore courses</a>
+      </div>
+
+      <!-- Social proof micro-line -->
+      <p class="hero-band__social-proof">
+        <span class="hero-band__proof-dot" aria-hidden="true">●</span>
+        Joined by <strong>50,000+</strong> students across 80 countries
+      </p>
+
+      <!-- Workspace / Dashboard mockup card -->
+      <div class="hero-mockup" role="img" aria-label="Academix course dashboard preview">
+
+        <!-- Mockup top bar -->
+        <div class="hero-mockup__bar">
+          <span class="hero-mockup__dot" style="background:#ff5f57;" aria-hidden="true"></span>
+          <span class="hero-mockup__dot" style="background:#febc2e;" aria-hidden="true"></span>
+          <span class="hero-mockup__dot" style="background:#28c840;" aria-hidden="true"></span>
+          <span class="hero-mockup__bar-title">Academix — My Dashboard</span>
+        </div>
+
+        <!-- Mockup body -->
+        <div class="hero-mockup__body">
+
+          <!-- Sidebar -->
+          <aside class="hero-mockup__sidebar" aria-hidden="true">
+            <p class="hero-mockup__sidebar-label">My Courses</p>
+            <ul class="hero-mockup__sidebar-list">
+              <li class="hero-mockup__sidebar-item hero-mockup__sidebar-item--active">📐 Mathematics</li>
+              <li class="hero-mockup__sidebar-item">🔬 Science</li>
+              <li class="hero-mockup__sidebar-item">📖 English</li>
+              <li class="hero-mockup__sidebar-item">🏛️ History</li>
+            </ul>
+            <p class="hero-mockup__sidebar-label" style="margin-top:16px;">Quick Links</p>
+            <ul class="hero-mockup__sidebar-list">
+              <li class="hero-mockup__sidebar-item">🏆 Certificates</li>
+              <li class="hero-mockup__sidebar-item">📅 Schedule</li>
+              <li class="hero-mockup__sidebar-item">💬 Messages</li>
+            </ul>
+          </aside>
+
+          <!-- Main content -->
+          <div class="hero-mockup__content" aria-hidden="true">
+
+            <!-- Welcome row -->
+            <div class="hero-mockup__welcome">
+              <div>
+                <p class="hero-mockup__welcome-title">Good morning, Alex 👋</p>
+                <p class="hero-mockup__welcome-sub">You have 3 lessons due this week</p>
+              </div>
+              <span class="badge badge-tag badge-tag-green" style="align-self:center;">On track</span>
+            </div>
+
+            <!-- Progress cards row -->
+            <div class="hero-mockup__cards">
+
+              <div class="hero-mockup__card hero-mockup__card--sky">
+                <p class="hero-mockup__card-subject">📐 Mathematics</p>
+                <p class="hero-mockup__card-chapter">Chapter 7 — Algebra</p>
+                <div class="hero-mockup__progress-track">
+                  <div class="hero-mockup__progress-fill" style="width:72%; background:var(--primary);"></div>
+                </div>
+                <p class="hero-mockup__card-pct">72% complete</p>
+              </div>
+
+              <div class="hero-mockup__card hero-mockup__card--mint">
+                <p class="hero-mockup__card-subject">🔬 Science</p>
+                <p class="hero-mockup__card-chapter">Unit 4 — Cell Biology</p>
+                <div class="hero-mockup__progress-track">
+                  <div class="hero-mockup__progress-fill" style="width:45%; background:var(--brand-teal);"></div>
+                </div>
+                <p class="hero-mockup__card-pct">45% complete</p>
+              </div>
+
+              <div class="hero-mockup__card hero-mockup__card--peach">
+                <p class="hero-mockup__card-subject">📖 English</p>
+                <p class="hero-mockup__card-chapter">Module 5 — Essay Writing</p>
+                <div class="hero-mockup__progress-track">
+                  <div class="hero-mockup__progress-fill" style="width:88%; background:var(--brand-orange);"></div>
+                </div>
+                <p class="hero-mockup__card-pct">88% complete</p>
+              </div>
+
+            </div><!-- /.hero-mockup__cards -->
+
+            <!-- Upcoming lesson row -->
+            <div class="hero-mockup__upcoming">
+              <p class="hero-mockup__upcoming-label">Next lesson</p>
+              <div class="hero-mockup__upcoming-row">
+                <span class="badge badge-tag badge-tag-purple">Math</span>
+                <span class="hero-mockup__upcoming-title">Solving Quadratic Equations</span>
+                <span class="hero-mockup__upcoming-time">Today · 3:00 PM</span>
+                <a href="#" class="btn btn-primary" style="padding:6px 14px;font-size:12px;">Join →</a>
+              </div>
+            </div>
+
+          </div><!-- /.hero-mockup__content -->
+        </div><!-- /.hero-mockup__body -->
+      </div><!-- /.hero-mockup -->
+
+    </div><!-- /.hero-band__inner -->
+  </section><!-- /.hero-band -->
+
+  <!-- ============================================================
+       TASK 4 — Logo Wall + Features Section
+       ============================================================ -->
+
+  <!-- Logo Wall -->
+  <section class="logo-wall section--sm" aria-label="Trusted by students at">
+    <div class="container">
+      <p class="logo-wall__label micro-upper">Trusted by students at</p>
+      <ul class="logo-wall__list" aria-label="Partner institutions">
+        <li class="logo-wall__item">Lincoln Academy</li>
+        <li class="logo-wall__item">Westbrook Institute</li>
+        <li class="logo-wall__item">Ridgefield High</li>
+        <li class="logo-wall__item">Sunrise College Prep</li>
+        <li class="logo-wall__item">Maplewood Academy</li>
+        <li class="logo-wall__item">Crestview University</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features section" id="features" aria-labelledby="features-heading">
+    <div class="container">
+
+      <!-- Section header -->
+      <div class="section-header text-center">
+        <p class="section-header__eyebrow micro-upper">Why Academix</p>
+        <h2 class="section-header__heading heading-2" id="features-heading">
+          Everything you need to excel
+        </h2>
+        <p class="section-header__sub subtitle">
+          A complete learning environment designed for students who want to
+          go further — at school, at home, or anywhere in between.
+        </p>
+      </div>
+
+      <!-- Feature cards grid — 3 columns -->
+      <div class="features__grid">
+
+        <!-- Card 1 — Peach: Learn at your pace -->
+        <article class="card card-feature card-peach features__card">
+          <div class="features__card-icon" aria-hidden="true">⏱️</div>
+          <h3 class="features__card-title heading-4">Learn at your own pace</h3>
+          <p class="features__card-body body-md">
+            Every lesson is available on demand. Pause, replay, and revisit
+            any topic whenever you need — no pressure, no deadlines you can't meet.
+          </p>
+          <a href="#courses" class="btn-link features__card-link">Browse courses →</a>
+        </article>
+
+        <!-- Card 2 — Mint: Expert instructors -->
+        <article class="card card-feature card-mint features__card">
+          <div class="features__card-icon" aria-hidden="true">🎓</div>
+          <h3 class="features__card-title heading-4">Expert instructors</h3>
+          <p class="features__card-body body-md">
+            Learn from certified teachers and subject-matter experts with
+            years of classroom and real-world experience in every field.
+          </p>
+          <a href="#about" class="btn-link features__card-link">Meet the team →</a>
+        </article>
+
+        <!-- Card 3 — Lavender: Certificates included -->
+        <article class="card card-feature card-lavender features__card">
+          <div class="features__card-icon" aria-hidden="true">🏆</div>
+          <h3 class="features__card-title heading-4">Certificates included</h3>
+          <p class="features__card-body body-md">
+            Complete a course and earn a shareable certificate — recognised by
+            schools, colleges, and employers as proof of your achievement.
+          </p>
+          <a href="#pricing" class="btn-link features__card-link">View plans →</a>
+        </article>
+
+        <!-- Card 4 — Sky: Progress tracking -->
+        <article class="card card-feature card-sky features__card">
+          <div class="features__card-icon" aria-hidden="true">📊</div>
+          <h3 class="features__card-title heading-4">Smart progress tracking</h3>
+          <p class="features__card-body body-md">
+            Your personalised dashboard shows exactly where you stand in
+            every course — so you always know what to tackle next.
+          </p>
+          <a href="#" class="btn-link features__card-link">See dashboard →</a>
+        </article>
+
+        <!-- Card 5 — Yellow bold: Live Q&A sessions -->
+        <article class="card card-feature card-yellow-bold features__card">
+          <div class="features__card-icon" aria-hidden="true">💬</div>
+          <h3 class="features__card-title heading-4">Live Q&amp;A sessions</h3>
+          <p class="features__card-body body-md">
+            Get unstuck fast. Join weekly live sessions where instructors
+            answer your questions in real time — no question is too small.
+          </p>
+          <a href="#pricing" class="btn-link features__card-link">Check schedule →</a>
+        </article>
+
+        <!-- Card 6 — Rose: Works on every device -->
+        <article class="card card-feature card-rose features__card">
+          <div class="features__card-icon" aria-hidden="true">📱</div>
+          <h3 class="features__card-title heading-4">Works on every device</h3>
+          <p class="features__card-body body-md">
+            Study from your laptop, tablet, or phone. Academix is fully
+            responsive and syncs your progress automatically across all devices.
+          </p>
+          <a href="#" class="btn-link features__card-link">Learn more →</a>
+        </article>
+
+      </div><!-- /.features__grid -->
+    </div>
+  </section><!-- /.features -->
+
+  <!-- ============================================================
+       TASK 5 — How It Works + Courses Section
+       ============================================================ -->
+
+  <!-- How It Works -->
+  <section class="how-it-works section" aria-labelledby="hiw-heading">
+    <div class="container">
+
+      <div class="section-header text-center">
+        <p class="section-header__eyebrow micro-upper">Getting started</p>
+        <h2 class="section-header__heading heading-2" id="hiw-heading">
+          Up and running in three steps
+        </h2>
+        <p class="section-header__sub subtitle">
+          No setup, no paperwork. Just pick a subject and start learning today.
+        </p>
+      </div>
+
+      <div class="hiw__steps">
+
+        <!-- Step 1 -->
+        <div class="hiw__step">
+          <div class="hiw__step-number" aria-hidden="true">1</div>
+          <div class="hiw__connector" aria-hidden="true"></div>
+          <div class="hiw__step-icon" aria-hidden="true">📚</div>
+          <h3 class="hiw__step-title heading-4">Pick a subject</h3>
+          <p class="hiw__step-body body-md">
+            Choose from Math, Science, English, or History. Every course is
+            structured by grade level so you always start at the right place.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="hiw__step">
+          <div class="hiw__step-number" aria-hidden="true">2</div>
+          <div class="hiw__connector" aria-hidden="true"></div>
+          <div class="hiw__step-icon" aria-hidden="true">🎯</div>
+          <h3 class="hiw__step-title heading-4">Follow the curriculum</h3>
+          <p class="hiw__step-body body-md">
+            Work through bite-sized video lessons, readings, and quizzes
+            built on a proven curriculum aligned with national standards.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="hiw__step">
+          <div class="hiw__step-number" aria-hidden="true">3</div>
+          <div class="hiw__step-icon" aria-hidden="true">🏆</div>
+          <h3 class="hiw__step-title heading-4">Earn your certificate</h3>
+          <p class="hiw__step-body body-md">
+            Finish the course, pass the final assessment, and download your
+            certificate — shareable on LinkedIn, resumes, and portfolios.
+          </p>
+        </div>
+
+      </div><!-- /.hiw__steps -->
+    </div>
+  </section><!-- /.how-it-works -->
+
+  <!-- Courses Section -->
+  <section class="courses section" id="courses" aria-labelledby="courses-heading"
+           style="background-color: var(--surface-soft);">
+    <div class="container">
+
+      <div class="section-header text-center">
+        <p class="section-header__eyebrow micro-upper">Core subjects</p>
+        <h2 class="section-header__heading heading-2" id="courses-heading">
+          Four subjects. Unlimited potential.
+        </h2>
+        <p class="section-header__sub subtitle">
+          Every course is taught by subject specialists and updated each
+          semester to keep content fresh and relevant.
+        </p>
+      </div>
+
+      <!-- Course cards — 4 columns -->
+      <div class="courses__grid">
+
+        <!-- Math -->
+        <article class="course-card card card-sky courses__card">
+          <div class="course-card__top">
+            <span class="badge badge-tag badge-tag-purple course-card__badge">Popular</span>
+            <div class="course-card__icon" aria-hidden="true">📐</div>
+          </div>
+          <h3 class="course-card__title heading-3">Mathematics</h3>
+          <p class="course-card__desc body-md">
+            From number sense and geometry to calculus and statistics — a
+            complete K-12 math pathway with interactive problem sets.
+          </p>
+          <ul class="course-card__topics">
+            <li>Arithmetic &amp; Number Theory</li>
+            <li>Algebra I &amp; II</li>
+            <li>Geometry</li>
+            <li>Pre-Calculus &amp; Calculus</li>
+            <li>Statistics &amp; Probability</li>
+          </ul>
+          <div class="course-card__footer">
+            <div class="course-card__meta">
+              <span>📹 120 lessons</span>
+              <span>⏱ ~60 hrs</span>
+            </div>
+            <a href="#pricing" class="btn btn-dark course-card__cta">Explore →</a>
+          </div>
+        </article>
+
+        <!-- Science -->
+        <article class="course-card card card-mint courses__card">
+          <div class="course-card__top">
+            <span class="badge badge-tag badge-tag-green course-card__badge">New content</span>
+            <div class="course-card__icon" aria-hidden="true">🔬</div>
+          </div>
+          <h3 class="course-card__title heading-3">Science</h3>
+          <p class="course-card__desc body-md">
+            Biology, Chemistry, Physics, and Earth Science — hands-on virtual
+            labs and experiments that make complex concepts click.
+          </p>
+          <ul class="course-card__topics">
+            <li>Biology &amp; Cell Science</li>
+            <li>Chemistry Fundamentals</li>
+            <li>Physics &amp; Forces</li>
+            <li>Earth &amp; Space Science</li>
+            <li>Environmental Science</li>
+          </ul>
+          <div class="course-card__footer">
+            <div class="course-card__meta">
+              <span>📹 95 lessons</span>
+              <span>⏱ ~50 hrs</span>
+            </div>
+            <a href="#pricing" class="btn btn-dark course-card__cta">Explore →</a>
+          </div>
+        </article>
+
+        <!-- English -->
+        <article class="course-card card card-peach courses__card">
+          <div class="course-card__top">
+            <span class="badge badge-tag badge-tag-orange course-card__badge">Bestseller</span>
+            <div class="course-card__icon" aria-hidden="true">📖</div>
+          </div>
+          <h3 class="course-card__title heading-3">English</h3>
+          <p class="course-card__desc body-md">
+            Reading comprehension, grammar, creative writing, and literature
+            analysis — building confident communicators at every level.
+          </p>
+          <ul class="course-card__topics">
+            <li>Reading &amp; Comprehension</li>
+            <li>Grammar &amp; Vocabulary</li>
+            <li>Essay &amp; Creative Writing</li>
+            <li>Literature Analysis</li>
+            <li>Public Speaking Prep</li>
+          </ul>
+          <div class="course-card__footer">
+            <div class="course-card__meta">
+              <span>📹 110 lessons</span>
+              <span>⏱ ~55 hrs</span>
+            </div>
+            <a href="#pricing" class="btn btn-dark course-card__cta">Explore →</a>
+          </div>
+        </article>
+
+        <!-- History -->
+        <article class="course-card card card-yellow courses__card">
+          <div class="course-card__top">
+            <span class="badge badge-tag badge-tag-sky course-card__badge">Updated 2026</span>
+            <div class="course-card__icon" aria-hidden="true">🏛️</div>
+          </div>
+          <h3 class="course-card__title heading-3">History</h3>
+          <p class="course-card__desc body-md">
+            World history, civics, geography, and critical thinking — helping
+            students understand the past to navigate the present.
+          </p>
+          <ul class="course-card__topics">
+            <li>Ancient &amp; Medieval History</li>
+            <li>Modern World History</li>
+            <li>U.S. History</li>
+            <li>Civics &amp; Government</li>
+            <li>Geography &amp; Culture</li>
+          </ul>
+          <div class="course-card__footer">
+            <div class="course-card__meta">
+              <span>📹 85 lessons</span>
+              <span>⏱ ~45 hrs</span>
+            </div>
+            <a href="#pricing" class="btn btn-dark course-card__cta">Explore →</a>
+          </div>
+        </article>
+
+      </div><!-- /.courses__grid -->
+    </div>
+  </section><!-- /.courses -->
+
+  <!-- ============================================================
+       TASK 6 — Stats Row + Pricing Section
+       ============================================================ -->
+
+  <!-- Stats Row -->
+  <section class="stats-row" aria-label="Academix by the numbers">
+    <div class="container">
+      <div class="stats-row__inner">
+
+        <div class="stat-item">
+          <p class="stat-item__number display-lg">50,000<span class="stat-item__plus">+</span></p>
+          <p class="stat-item__label body-md">Active students</p>
+        </div>
+
+        <div class="stat-divider" aria-hidden="true"></div>
+
+        <div class="stat-item">
+          <p class="stat-item__number display-lg">200<span class="stat-item__plus">+</span></p>
+          <p class="stat-item__label body-md">Course modules</p>
+        </div>
+
+        <div class="stat-divider" aria-hidden="true"></div>
+
+        <div class="stat-item">
+          <p class="stat-item__number display-lg">95<span class="stat-item__plus">%</span></p>
+          <p class="stat-item__label body-md">Completion rate</p>
+        </div>
+
+        <div class="stat-divider" aria-hidden="true"></div>
+
+        <div class="stat-item">
+          <p class="stat-item__number display-lg">80<span class="stat-item__plus">+</span></p>
+          <p class="stat-item__label body-md">Countries reached</p>
+        </div>
+
+      </div>
+    </div>
+  </section><!-- /.stats-row -->
+
+  <!-- Pricing Section -->
+  <section class="pricing section" id="pricing" aria-labelledby="pricing-heading">
+    <div class="container">
+
+      <div class="section-header text-center">
+        <p class="section-header__eyebrow micro-upper">Simple pricing</p>
+        <h2 class="section-header__heading heading-2" id="pricing-heading">
+          Pick the plan that fits you
+        </h2>
+        <p class="section-header__sub subtitle">
+          Start free and upgrade whenever you're ready.
+          No contracts, cancel any time.
+        </p>
+      </div>
+
+      <!-- 4-tier pricing cards -->
+      <div class="pricing__grid">
+
+        <!-- Free -->
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <p class="pricing-card__tier micro-upper">Free</p>
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount display-lg">$0</span>
+              <span class="pricing-card__period body-sm">/month</span>
+            </div>
+            <p class="pricing-card__desc body-sm">
+              A taste of Academix. Perfect for exploring one subject at your own pace.
+            </p>
+          </div>
+          <a href="#" class="btn btn-secondary pricing-card__cta">Get started free</a>
+          <ul class="pricing-card__features">
+            <li class="pricing-feature pricing-feature--yes">1 subject access</li>
+            <li class="pricing-feature pricing-feature--yes">Up to 10 lessons/month</li>
+            <li class="pricing-feature pricing-feature--yes">Progress dashboard</li>
+            <li class="pricing-feature pricing-feature--no">Certificates</li>
+            <li class="pricing-feature pricing-feature--no">Live Q&amp;A sessions</li>
+            <li class="pricing-feature pricing-feature--no">Downloadable resources</li>
+            <li class="pricing-feature pricing-feature--no">Priority support</li>
+          </ul>
+        </div>
+
+        <!-- Basic -->
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <p class="pricing-card__tier micro-upper">Basic</p>
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount display-lg">$9</span>
+              <span class="pricing-card__period body-sm">/month</span>
+            </div>
+            <p class="pricing-card__desc body-sm">
+              For dedicated students ready to go deeper in any subject area.
+            </p>
+          </div>
+          <a href="#" class="btn btn-secondary pricing-card__cta">Start Basic</a>
+          <ul class="pricing-card__features">
+            <li class="pricing-feature pricing-feature--yes">2 subjects access</li>
+            <li class="pricing-feature pricing-feature--yes">Unlimited lessons</li>
+            <li class="pricing-feature pricing-feature--yes">Progress dashboard</li>
+            <li class="pricing-feature pricing-feature--yes">Certificates</li>
+            <li class="pricing-feature pricing-feature--no">Live Q&amp;A sessions</li>
+            <li class="pricing-feature pricing-feature--no">Downloadable resources</li>
+            <li class="pricing-feature pricing-feature--no">Priority support</li>
+          </ul>
+        </div>
+
+        <!-- Pro — Featured -->
+        <div class="pricing-card pricing-card-featured">
+          <div class="pricing-card__header">
+            <div class="pricing-card__tier-row">
+              <p class="pricing-card__tier micro-upper">Pro</p>
+              <span class="badge badge-purple pricing-card__popular">Most Popular</span>
+            </div>
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount display-lg">$19</span>
+              <span class="pricing-card__period body-sm">/month</span>
+            </div>
+            <p class="pricing-card__desc body-sm">
+              Full access to all subjects plus live sessions — the complete Academix experience.
+            </p>
+          </div>
+          <a href="#" class="btn btn-primary pricing-card__cta">Start Pro</a>
+          <ul class="pricing-card__features">
+            <li class="pricing-feature pricing-feature--yes">All 4 subjects</li>
+            <li class="pricing-feature pricing-feature--yes">Unlimited lessons</li>
+            <li class="pricing-feature pricing-feature--yes">Progress dashboard</li>
+            <li class="pricing-feature pricing-feature--yes">Certificates</li>
+            <li class="pricing-feature pricing-feature--yes">Live Q&amp;A sessions</li>
+            <li class="pricing-feature pricing-feature--yes">Downloadable resources</li>
+            <li class="pricing-feature pricing-feature--no">Priority support</li>
+          </ul>
+        </div>
+
+        <!-- School -->
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <p class="pricing-card__tier micro-upper">School</p>
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount display-lg">$49</span>
+              <span class="pricing-card__period body-sm">/month</span>
+            </div>
+            <p class="pricing-card__desc body-sm">
+              For institutions and tutoring centres. Up to 30 students on one account.
+            </p>
+          </div>
+          <a href="#" class="btn btn-dark pricing-card__cta">Contact us</a>
+          <ul class="pricing-card__features">
+            <li class="pricing-feature pricing-feature--yes">All 4 subjects</li>
+            <li class="pricing-feature pricing-feature--yes">Unlimited lessons</li>
+            <li class="pricing-feature pricing-feature--yes">Progress dashboard</li>
+            <li class="pricing-feature pricing-feature--yes">Certificates</li>
+            <li class="pricing-feature pricing-feature--yes">Live Q&amp;A sessions</li>
+            <li class="pricing-feature pricing-feature--yes">Downloadable resources</li>
+            <li class="pricing-feature pricing-feature--yes">Priority support</li>
+          </ul>
+        </div>
+
+      </div><!-- /.pricing__grid -->
+
+      <!-- Comparison Table -->
+      <div class="comparison-table" role="region" aria-label="Feature comparison table">
+        <h3 class="comparison-table__heading heading-4">Compare plans in detail</h3>
+
+        <div class="comparison-table__scroll">
+          <table class="comparison-table__table">
+            <thead>
+              <tr class="comparison-table__head-row">
+                <th class="comparison-table__feature-col" scope="col">Feature</th>
+                <th scope="col">Free</th>
+                <th scope="col">Basic</th>
+                <th scope="col" class="comparison-table__featured-col">Pro</th>
+                <th scope="col">School</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="comparison-row comparison-table__category-row">
+                <td colspan="5" class="comparison-table__category">Content Access</td>
+              </tr>
+              <tr class="comparison-row">
+                <td class="comparison-table__label">Subjects included</td>
+                <td class="comparison-table__cell">1</td>
+                <td class="comparison-table__cell">2</td>
+                <td class="comparison-table__cell comparison-table__featured-col">All 4</td>
+                <td class="comparison-table__cell">All 4</td>
+              </tr>
+              <tr class="comparison-row">
+                <td class="comparison-table__label">Lessons per month</td>
+                <td class="comparison-table__cell">10</td>
+                <td class="comparison-table__cell">Unlimited</td>
+                <td class="comparison-table__cell comparison-table__featured-col">Unlimited</td>
+                <td class="comparison-table__cell">Unlimited</td>
+              </tr>
+              <tr class="comparison-row">
+                <td class="comparison-table__label">Video quality</td>
+                <td class="comparison-table__cell">720p</td>
+                <td class="comparison-table__cell">1080p</td>
+                <td class="comparison-table__cell comparison-table__featured-col">1080p</td>
+                <td class="comparison-table__cell">1080p</td>
+              </tr>
+
+              <tr class="comparison-row comparison-table__category-row">
+                <td colspan="5" class="comparison-table__category">Progress &amp; Certification</td>
+              </tr>
+              <tr class="comparison-row">
+                <td class="comparison-table__label">Progress dashboard</td>
+                <td class="comparison-table__cell">✓</td>
+                <td class="comparison-table__cell">✓</td>
+                <td class="comparison-table__cell comparison-table__featured-col">✓</td>
+                <td class="comparison-table__cell">✓</td>
+              </tr>
+              <tr class="comparison-row">
+                <td class="comparison-table__label">Certificates</td>
+                <td class="comparison-table__cell comparison-table__no">—</td>
+                <td class="comparison-table__cell">✓</td>
+                <td class="comparison-table__cell comparison-table__featured-col">✓</td>
+                <td class="comparison-table__cell">✓</td>
+              </tr>
+              <tr class="comparison-row">
+                <td class="comparison-table__label">Quizzes &amp; assessments</td>
+                <td class="comparison-table__cell">Basic</td>
+                <td class="comparison-table__cell">Full</td>
+                <td class="comparison-table__cell comparison-table__featured-col">Full</td>
+                <td class="comparison-table__cell">Full</td>
+              </tr>
+
+              <tr class="comparison-row comparison-table__category-row">
+                <td colspan="5" class="comparison-table__category">Support &amp; Extras</td>
+              </tr>
+              <tr class="comparison-row">
+                <td class="comparison-table__label">Live Q&amp;A sessions</td>
+                <td class="comparison-table__cell comparison-table__no">—</td>
+                <td class="comparison-table__cell comparison-table__no">—</td>
+                <td class="comparison-table__cell comparison-table__featured-col">✓</td>
+                <td class="comparison-table__cell">✓</td>
+              </tr>
+              <tr class="comparison-row">
+                <td class="comparison-table__label">Downloadable resources</td>
+                <td class="comparison-table__cell comparison-table__no">—</td>
+                <td class="comparison-table__cell comparison-table__no">—</td>
+                <td class="comparison-table__cell comparison-table__featured-col">✓</td>
+                <td class="comparison-table__cell">✓</td>
+              </tr>
+              <tr class="comparison-row">
+                <td class="comparison-table__label">Priority support</td>
+                <td class="comparison-table__cell comparison-table__no">—</td>
+                <td class="comparison-table__cell comparison-table__no">—</td>
+                <td class="comparison-table__cell comparison-table__featured-col comparison-table__no">—</td>
+                <td class="comparison-table__cell">✓</td>
+              </tr>
+              <tr class="comparison-row">
+                <td class="comparison-table__label">Student seats</td>
+                <td class="comparison-table__cell">1</td>
+                <td class="comparison-table__cell">1</td>
+                <td class="comparison-table__cell comparison-table__featured-col">1</td>
+                <td class="comparison-table__cell">Up to 30</td>
+              </tr>
+            </tbody>
+          </table>
+        </div><!-- /.comparison-table__scroll -->
+      </div><!-- /.comparison-table -->
+
+    </div>
+  </section><!-- /.pricing -->
+
+  <!-- ============================================================
+       TASK 7 — Testimonials + FAQ Section
+       ============================================================ -->
+
+  <!-- Testimonials -->
+  <section class="testimonials section" aria-labelledby="testimonials-heading"
+           style="background-color: var(--surface-soft);">
+    <div class="container">
+
+      <div class="section-header text-center">
+        <p class="section-header__eyebrow micro-upper">Student stories</p>
+        <h2 class="section-header__heading heading-2" id="testimonials-heading">
+          Real students. Real results.
+        </h2>
+        <p class="section-header__sub subtitle">
+          Thousands of students have improved their grades, earned certificates,
+          and built confidence with Academix.
+        </p>
+      </div>
+
+      <div class="testimonials__grid">
+
+        <!-- Testimonial 1 -->
+        <article class="testimonial-card">
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <blockquote class="testimonial-card__quote body-md">
+            "Academix completely changed how I approach math. The step-by-step
+            lessons made algebra click for the first time — I went from a C to
+            an A in one semester."
+          </blockquote>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">SM</div>
+            <div class="testimonial-card__meta">
+              <p class="testimonial-card__name body-md-medium">Sofia M.</p>
+              <p class="testimonial-card__detail body-sm">Grade 10 · Mathematics</p>
+            </div>
+            <span class="badge badge-tag badge-tag-purple">Math Pro</span>
+          </footer>
+        </article>
+
+        <!-- Testimonial 2 -->
+        <article class="testimonial-card">
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <blockquote class="testimonial-card__quote body-md">
+            "The live Q&amp;A sessions are a game-changer. Being able to ask my
+            science teacher a question at 9pm the night before an exam is
+            something no other platform offers."
+          </blockquote>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">JL</div>
+            <div class="testimonial-card__meta">
+              <p class="testimonial-card__name body-md-medium">James L.</p>
+              <p class="testimonial-card__detail body-sm">Grade 11 · Science</p>
+            </div>
+            <span class="badge badge-tag badge-tag-green">Science Pro</span>
+          </footer>
+        </article>
+
+        <!-- Testimonial 3 -->
+        <article class="testimonial-card">
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <blockquote class="testimonial-card__quote body-md">
+            "As a parent, I love being able to track my daughter's progress.
+            The dashboard is clear, the content is excellent, and the
+            certificate she earned boosted her college application."
+          </blockquote>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">PK</div>
+            <div class="testimonial-card__meta">
+              <p class="testimonial-card__name body-md-medium">Patricia K.</p>
+              <p class="testimonial-card__detail body-sm">Parent · All subjects</p>
+            </div>
+            <span class="badge badge-tag badge-tag-orange">School Plan</span>
+          </footer>
+        </article>
+
+        <!-- Testimonial 4 -->
+        <article class="testimonial-card">
+          <div class="testimonial-card__stars" aria-label="4 out of 5 stars">
+            <span aria-hidden="true">★★★★☆</span>
+          </div>
+          <blockquote class="testimonial-card__quote body-md">
+            "I used Academix to catch up on a whole year of History after
+            moving schools. The structured curriculum and clear explanations
+            made it easy to get back on track quickly."
+          </blockquote>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">AR</div>
+            <div class="testimonial-card__meta">
+              <p class="testimonial-card__name body-md-medium">Amir R.</p>
+              <p class="testimonial-card__detail body-sm">Grade 9 · History</p>
+            </div>
+            <span class="badge badge-tag badge-tag-sky">History</span>
+          </footer>
+        </article>
+
+        <!-- Testimonial 5 -->
+        <article class="testimonial-card">
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <blockquote class="testimonial-card__quote body-md">
+            "The English writing modules helped me go from dreading essays to
+            actually enjoying them. My teacher noticed the improvement
+            immediately — highly recommend."
+          </blockquote>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">CW</div>
+            <div class="testimonial-card__meta">
+              <p class="testimonial-card__name body-md-medium">Clara W.</p>
+              <p class="testimonial-card__detail body-sm">Grade 8 · English</p>
+            </div>
+            <span class="badge badge-tag badge-tag-purple">English Pro</span>
+          </footer>
+        </article>
+
+        <!-- Testimonial 6 -->
+        <article class="testimonial-card">
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <blockquote class="testimonial-card__quote body-md">
+            "We rolled out Academix across our entire tutoring centre —
+            30 students. Setup took less than an hour and the admin dashboard
+            makes progress tracking effortless."
+          </blockquote>
+          <footer class="testimonial-card__footer">
+            <div class="testimonial-card__avatar" aria-hidden="true">DT</div>
+            <div class="testimonial-card__meta">
+              <p class="testimonial-card__name body-md-medium">David T.</p>
+              <p class="testimonial-card__detail body-sm">Tutor · School Plan</p>
+            </div>
+            <span class="badge badge-tag badge-tag-green">Verified Tutor</span>
+          </footer>
+        </article>
+
+      </div><!-- /.testimonials__grid -->
+    </div>
+  </section><!-- /.testimonials -->
+
+  <!-- FAQ Section -->
+  <section class="faq section" id="faq" aria-labelledby="faq-heading">
+    <div class="container">
+
+      <div class="section-header text-center">
+        <p class="section-header__eyebrow micro-upper">Got questions?</p>
+        <h2 class="section-header__heading heading-2" id="faq-heading">
+          Frequently asked questions
+        </h2>
+        <p class="section-header__sub subtitle">
+          Can't find the answer here? <a href="#" class="btn-link">Contact our support team →</a>
+        </p>
+      </div>
+
+      <div class="faq__list" role="list">
+
+        <!-- FAQ 1 -->
+        <details class="faq-item" role="listitem">
+          <summary class="faq-item__question heading-5">
+            Is Academix really free to start?
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-item__answer body-md">
+            Yes — the Free plan never expires and doesn't require a credit card.
+            You get access to one subject and up to 10 lessons per month. Upgrade
+            any time from your account dashboard if you want full access.
+          </div>
+        </details>
+
+        <!-- FAQ 2 -->
+        <details class="faq-item" role="listitem">
+          <summary class="faq-item__question heading-5">
+            What age group is Academix designed for?
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-item__answer body-md">
+            Academix is built for students in grades 5 through 12 (ages 10–18).
+            Each subject has courses organised by grade level, so learners always
+            start at the right point in their journey.
+          </div>
+        </details>
+
+        <!-- FAQ 3 -->
+        <details class="faq-item" role="listitem">
+          <summary class="faq-item__question heading-5">
+            Are the certificates recognised by schools and colleges?
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-item__answer body-md">
+            Academix certificates are widely accepted as supplementary academic
+            credentials. While they are not accredited qualifications, many schools
+            and colleges count them toward extracurricular achievements and
+            college applications. Always check with your institution for specifics.
+          </div>
+        </details>
+
+        <!-- FAQ 4 -->
+        <details class="faq-item" role="listitem">
+          <summary class="faq-item__question heading-5">
+            Can I switch or cancel my plan at any time?
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-item__answer body-md">
+            Absolutely. You can upgrade, downgrade, or cancel your subscription
+            at any time from your account settings. If you cancel, you'll keep
+            access until the end of your current billing period — no hidden fees.
+          </div>
+        </details>
+
+        <!-- FAQ 5 -->
+        <details class="faq-item" role="listitem">
+          <summary class="faq-item__question heading-5">
+            How do the live Q&amp;A sessions work?
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-item__answer body-md">
+            Pro and School plan members get access to weekly live sessions for
+            each subject. Sessions are hosted by subject instructors and run
+            for 45–60 minutes. You can submit questions in advance or ask live.
+            All sessions are recorded and available for 30 days after broadcast.
+          </div>
+        </details>
+
+        <!-- FAQ 6 -->
+        <details class="faq-item" role="listitem">
+          <summary class="faq-item__question heading-5">
+            Does the School plan include admin tools?
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-item__answer body-md">
+            Yes. The School plan comes with a dedicated admin dashboard where
+            you can add and manage up to 30 student seats, view individual
+            progress reports, assign courses, and contact priority support.
+            Perfect for tutoring centres, homeschool co-ops, and small schools.
+          </div>
+        </details>
+
+      </div><!-- /.faq__list -->
+    </div>
+  </section><!-- /.faq -->
+
+  <!-- ============================================================
+       TASK 8 — CTA Banner + Footer
+       ============================================================ -->
+
+  <!-- CTA Banner -->
+  <section class="cta-banner section" aria-labelledby="cta-heading">
+    <div class="container">
+      <div class="cta-banner__inner">
+
+        <!-- Decorative dots -->
+        <span class="cta-banner__dot cta-banner__dot--purple"  aria-hidden="true"></span>
+        <span class="cta-banner__dot cta-banner__dot--yellow"  aria-hidden="true"></span>
+        <span class="cta-banner__dot cta-banner__dot--teal"    aria-hidden="true"></span>
+        <span class="cta-banner__dot cta-banner__dot--pink"    aria-hidden="true"></span>
+
+        <div class="cta-banner__content">
+          <p class="cta-banner__eyebrow micro-upper">Ready to begin?</p>
+          <h2 class="cta-banner__heading heading-1" id="cta-heading">
+            Start your learning journey today.
+          </h2>
+          <p class="cta-banner__sub subtitle">
+            Join 50,000+ students already learning on Academix.
+            No credit card required — start free in seconds.
+          </p>
+          <div class="cta-banner__actions">
+            <a href="#pricing" class="btn btn-primary cta-banner__btn">Get started free</a>
+            <a href="#courses" class="btn btn-secondary">Explore courses</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section><!-- /.cta-banner -->
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo" id="about">
+    <div class="container">
+
+      <div class="site-footer__top">
+
+        <!-- Brand column -->
+        <div class="site-footer__brand">
+          <a href="#" class="site-nav__logo site-footer__logo" aria-label="Academix home">
+            <span class="site-nav__logo-mark" aria-hidden="true">A</span>
+            <span class="site-nav__logo-text">Academix</span>
+          </a>
+          <p class="site-footer__tagline body-sm">
+            Expert-taught online courses for Math, Science, English, and History —
+            helping every student reach their potential.
+          </p>
+          <!-- Social icons (text-based, no external SVG needed) -->
+          <div class="site-footer__socials" aria-label="Social media links">
+            <a href="#" class="site-footer__social-link" aria-label="Twitter">𝕏</a>
+            <a href="#" class="site-footer__social-link" aria-label="LinkedIn">in</a>
+            <a href="#" class="site-footer__social-link" aria-label="YouTube">▶</a>
+            <a href="#" class="site-footer__social-link" aria-label="Instagram">◈</a>
+          </div>
+        </div>
+
+        <!-- Link columns -->
+        <nav class="site-footer__nav" aria-label="Footer navigation">
+
+          <div class="site-footer__col">
+            <p class="site-footer__col-heading micro-upper">Courses</p>
+            <ul class="site-footer__links">
+              <li><a href="#courses" class="footer-link">Mathematics</a></li>
+              <li><a href="#courses" class="footer-link">Science</a></li>
+              <li><a href="#courses" class="footer-link">English</a></li>
+              <li><a href="#courses" class="footer-link">History</a></li>
+              <li><a href="#courses" class="footer-link">All subjects</a></li>
+            </ul>
+          </div>
+
+          <div class="site-footer__col">
+            <p class="site-footer__col-heading micro-upper">Resources</p>
+            <ul class="site-footer__links">
+              <li><a href="#" class="footer-link">Study guides</a></li>
+              <li><a href="#" class="footer-link">Practice quizzes</a></li>
+              <li><a href="#" class="footer-link">Video library</a></li>
+              <li><a href="#" class="footer-link">Certificate gallery</a></li>
+              <li><a href="#" class="footer-link">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="site-footer__col">
+            <p class="site-footer__col-heading micro-upper">About</p>
+            <ul class="site-footer__links">
+              <li><a href="#" class="footer-link">Our mission</a></li>
+              <li><a href="#" class="footer-link">Meet the team</a></li>
+              <li><a href="#" class="footer-link">Instructors</a></li>
+              <li><a href="#" class="footer-link">Careers</a></li>
+              <li><a href="#" class="footer-link">Press</a></li>
+            </ul>
+          </div>
+
+          <div class="site-footer__col">
+            <p class="site-footer__col-heading micro-upper">Support</p>
+            <ul class="site-footer__links">
+              <li><a href="#faq" class="footer-link">Help centre</a></li>
+              <li><a href="#" class="footer-link">Contact us</a></li>
+              <li><a href="#" class="footer-link">System status</a></li>
+              <li><a href="#" class="footer-link">Community forum</a></li>
+              <li><a href="#" class="footer-link">Accessibility</a></li>
+            </ul>
+          </div>
+
+          <div class="site-footer__col">
+            <p class="site-footer__col-heading micro-upper">Legal</p>
+            <ul class="site-footer__links">
+              <li><a href="#" class="footer-link">Privacy policy</a></li>
+              <li><a href="#" class="footer-link">Terms of service</a></li>
+              <li><a href="#" class="footer-link">Cookie policy</a></li>
+              <li><a href="#" class="footer-link">GDPR</a></li>
+              <li><a href="#" class="footer-link">COPPA</a></li>
+            </ul>
+          </div>
+
+        </nav><!-- /.site-footer__nav -->
+      </div><!-- /.site-footer__top -->
+
+      <!-- Footer bottom bar -->
+      <div class="site-footer__bottom">
+        <p class="site-footer__copyright body-sm">
+          © 2026 Academix Inc. All rights reserved.
+        </p>
+        <div class="site-footer__bottom-links">
+          <a href="#" class="footer-link">Privacy</a>
+          <a href="#" class="footer-link">Terms</a>
+          <a href="#" class="footer-link">Cookies</a>
+        </div>
+      </div>
+
+    </div>
+  </footer><!-- /.site-footer -->
+
+</body>
+</html>
